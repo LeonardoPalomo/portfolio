@@ -41,3 +41,17 @@ etchasketchLink.addEventListener('mouseout', (e) => {
   welcomeContainer.removeAttribute("hidden");
   etchasketchDetails.setAttribute("hidden", "");
 });
+
+//------------------CURRENT PROJECTS ----------------------------------
+const currentLink = document.querySelector('#current');
+const currentDetails = document.querySelector('#current-details');
+
+currentLink.addEventListener('mouseenter', (e) => {
+  welcomeContainer.setAttribute("hidden", "");
+  currentDetails.removeAttribute("hidden");
+});
+
+currentLink.addEventListener('mouseout', (e) => {
+  welcomeContainer.removeAttribute("hidden");
+  currentDetails.setAttribute("hidden", "");
+});
