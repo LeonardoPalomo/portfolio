@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@500&display=swap" rel="stylesheet">
   <title>Leo's portfolio</title>
 </head>
 <body>
@@ -12,14 +15,32 @@
       <h1>Hello there!</h1>
     </div>
     <div class="sidebar">
-      <a href="./etchasketch/etchasketch.html">ETCH A SKETCH</a>
-      <a href="./etchasketch/etchasketch.html">ETCH A SKETCH</a>
-      <a href="./etchasketch/etchasketch.html">ETCH A SKETCH</a>
-      <a href="./etchasketch/etchasketch.html">ETCH A SKETCH</a>
-      <a href="./etchasketch/etchasketch.html">ETCH A SKETCH</a>
+      <a id='neurone' href="./etchasketch/etchasketch.html">NEURONE</a>
+      <a id='sysmec' href="./etchasketch/etchasketch.html">SYSMEC</a>
+      <a id='etchasketch' href="./etchasketch/etchasketch.html">TOP - ETCH A SKETCH</a>
+      <a href="./etchasketch/etchasketch.html">CURRENT PROJECTS</a>
     </div>
     <div class="description">
-      <p>UNDER CONSTRUCTION</p>
+      <div id="welcome">
+        <p><strong>UNDER CONSTRUCTION</strong></p>
+        <p>This space will be used as a welcome and introduction of the site.</p>
+      </div>
+      <div id="neurone-details" hidden>
+        <p><strong>THIS IS A PREVIEW OF A NEURONE PROJECT</strong></p>
+        <p>Used MEAN stack to develop a User Interface, worked mainly with Angular.</p>
+      </div>
+      <div id="sysmec-details" hidden>
+        <p><strong>THIS IS A PREVIEW OF A SYSMEC PROJECT</strong></p>
+        <p>Used ReactJS to develop a User Interface.</p>
+      </div>
+      <div id="etchasketch-details" hidden>
+        <p><strong>THIS IS A PREVIEW OF ETCH A SKETCH</strong></p>
+        <p>Here is a project I developed working on The Odin Project (TOP)</p>
+      </div>
+      <div id="etchasketch-details" hidden>
+        <p><strong>WHERE AM I NOW?</strong></p>
+        <p>Currently learning the Ruby on Rails framework.</p>
+      </div>
     </div>
     <script src="portfolio.js"></script>
   </div>
