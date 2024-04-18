@@ -4,15 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./sysmec.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@500&display=swap" rel="stylesheet">
   <title>SYSMEC</title>
 </head>
 <body>
-  <h1>SYSMEC</h1>
-  <div class="video-container">
-    <video controls width="960" muted>
-      <source src="./assets/videos/sysmec.webm" type="video/webm"/>
-      <p>Your browser doesn't support this video. You can download it clicking <a href="./assets/videos/sysmec.webm" download="sysmec.webm">here</a> instead.</p>
-    </video>
+  <div class="container">
+    <a href="../index.html">&lt; Go back</a>
+    <h1>SYSMEC</h1>
+    <div class="tags">
+      <p>
+        TAGS: ReactJS, UI, UX, AWS, MomentJS, Recharts
+      </p>
+    </div>
+    <div class="content">
+      <p>
+      My role in this project was to develop user interfaces to monitor data in real time.
+      There were trenches located in another region, which had sensors to keep track of temperatures,
+      battery levels and connectivity, delivering this information using Amazon Web Services (AWS).
+      This data was processed and presented to the user in two interfaces, one as a summary for all trenches,
+      and another one as a detailed view of each one.
+      </p>
+
+      <p>
+        Here we can watch the end result:
+      </p>
+    </div>
+    <div class="video-container">
+      <video controls width="960" muted>
+        <source src="./assets/videos/sysmec.webm" type="video/webm"/>
+        <p>Your browser doesn't support this video. You can download it clicking <a href="./assets/videos/sysmec.webm" download="sysmec.webm">here</a> instead.</p>
+      </video>
+    </div>
+    <div class="content">
+      <p>
+        The user logs in and is presented with an interface of all the trenches with summarized data, for example,
+        the last checked temperature. Here they can select any trench for a detailed view, where there is historic
+        data on temperature and battery levels whitin a date range. An export button is provided to save the chart
+        as-is with all the requested information.
+      </p>
+    </div>
+
   </div>
 </body>
 </html>
