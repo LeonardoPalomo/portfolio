@@ -1,17 +1,14 @@
 const welcomeContainer = document.querySelector('#welcome');
+let activeDescription = welcomeContainer;
 
 //---------------------------NEURONE LOGIC ------------------------- 
 const neuroneLink = document.querySelector('#neurone');
 const neuroneDetails = document.querySelector('#neurone-details');
 
 neuroneLink.addEventListener('mouseenter', (e) => {
-  welcomeContainer.setAttribute("hidden", "");
-  neuroneDetails.removeAttribute("hidden");
-});
-
-neuroneLink.addEventListener('mouseout', (e) => {
-  welcomeContainer.removeAttribute("hidden");
-  neuroneDetails.setAttribute("hidden", "");
+  activeDescription.setAttribute("hidden", "");
+  activeDescription = neuroneDetails;
+  activeDescription.removeAttribute("hidden");
 });
 
 //---------------------SYSMEC LOGIC ----------------------------- 
@@ -19,13 +16,9 @@ const sysmecLink = document.querySelector('#sysmec');
 const sysmecDetails = document.querySelector('#sysmec-details');
 
 sysmecLink.addEventListener('mouseenter', (e) => {
-  welcomeContainer.setAttribute("hidden", "");
-  sysmecDetails.removeAttribute("hidden");
-});
-
-sysmecLink.addEventListener('mouseout', (e) => {
-  welcomeContainer.removeAttribute("hidden");
-  sysmecDetails.setAttribute("hidden", "");
+  activeDescription.setAttribute("hidden", "");
+  activeDescription = sysmecDetails;
+  activeDescription.removeAttribute("hidden");
 });
 
 //----------------------ETCH A SKETCH LOGIC ----------------------------- 
@@ -33,13 +26,9 @@ const etchasketchLink = document.querySelector('#etchasketch');
 const etchasketchDetails = document.querySelector('#etchasketch-details');
 
 etchasketchLink.addEventListener('mouseenter', (e) => {
-  welcomeContainer.setAttribute("hidden", "");
-  etchasketchDetails.removeAttribute("hidden");
-});
-
-etchasketchLink.addEventListener('mouseout', (e) => {
-  welcomeContainer.removeAttribute("hidden");
-  etchasketchDetails.setAttribute("hidden", "");
+  activeDescription.setAttribute("hidden", "");
+  activeDescription = etchasketchDetails;
+  activeDescription.removeAttribute("hidden");
 });
 
 //------------------CURRENT PROJECTS ----------------------------------
@@ -47,11 +36,8 @@ const currentLink = document.querySelector('#current');
 const currentDetails = document.querySelector('#current-details');
 
 currentLink.addEventListener('mouseenter', (e) => {
-  welcomeContainer.setAttribute("hidden", "");
-  currentDetails.removeAttribute("hidden");
+  activeDescription.setAttribute("hidden", "");
+  activeDescription = currentDetails;
+  activeDescription.removeAttribute("hidden");
 });
 
-currentLink.addEventListener('mouseout', (e) => {
-  welcomeContainer.removeAttribute("hidden");
-  currentDetails.setAttribute("hidden", "");
-});
