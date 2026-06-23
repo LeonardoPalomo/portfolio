@@ -58,6 +58,6 @@ a:hover {
 .description {
   padding: 2rem;
   height: 88vh;
-  font-size: 5vw;
+  font-size: 5rem;
   background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(66,66,66,1) 100%);
 }
